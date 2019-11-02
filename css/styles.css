@@ -1,3 +1,38 @@
+
+/**
+ *  1. Fonts 
+ **/
+
+@import url('https://fonts.googleapis.com/css?family=Karla:400,700&display=swap');
+
+/**
+ *  2. Reset 
+ **/
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/**
+ *  3. General 
+ **/
+
+html {
+    font-size: 16px;
+}
+
+/**
+ *  4. Single Price
+ **/
+
+
+
+/**
+ *  5. Footer 
+ **/
+
 .attribution { 
     font-size: 11px; 
     text-align: center; }
