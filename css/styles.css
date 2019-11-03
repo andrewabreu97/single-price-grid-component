@@ -37,6 +37,7 @@ body {
     max-width: 350px;
     width: 90%;
     margin: 5em auto;
+    height: 100vh;
 }
 
 .single-price {
@@ -179,15 +180,19 @@ body {
  **/
 
 footer {
-    display: none;
+    padding: 1em;
 }
 
 .attribution {
-    font-size: 11px; 
+    font-size: 1rem;; 
     text-align: center; }
 
 .attribution a { 
     color: hsl(228, 45%, 44%); 
+}
+
+.attribution span {
+    color: red;
 }
 
 /**
