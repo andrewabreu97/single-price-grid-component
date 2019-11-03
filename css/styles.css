@@ -27,8 +27,6 @@ body {
     background-color: hsl(206, 47%, 93%);
     font-family: "Karla", Arial, Helvetica, sans-serif;
     height: 100vh;
-    /* display: flex;
-    align-items: center; */
 }
 
 /**
@@ -121,8 +119,33 @@ body {
 }
 
 .button--primary {
-    background-color: hsl(71, 73%, 54%);
+    background-color: hsl(71, 73%, 45%);
     color: hsl(0, 0%, 100%);
+}
+
+.shutter-out-horizontal {
+    position: relative;
+    transform: translateZ(0);
+}
+
+.shutter-out-horizontal::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: hsl(71, 73%, 34%);
+    transform: scaleX(0);
+    transform-origin: 50%;
+    transition-property: transform;
+    transition: 300ms ease-out;
+    border-radius: 5px;
+}
+
+.shutter-out-horizontal:hover::before {
+    transform: scaleX(1);
 }
 
 .single-price__list {
@@ -140,7 +163,7 @@ body {
 }
 
 .single-price--bright-yellow {
-    color: hsl(71, 73%, 54%);
+    color: hsl(71, 73%, 45%);
 }
 
 .single-price--grayish-blue {
